@@ -1,0 +1,40 @@
+<style>
+body{ margin:20px; padding:20px; }
+.bubble {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 120px;
+  height: 80px;
+  position: relative;
+  border: none;
+  -webkit-border-radius: 14px 10px 10px / 10px;
+  border-radius: 14px 10px 10px / 10px;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #5AC4EC;
+}
+
+.bubble::before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 100%;
+  border: 13px solid rgba(0,0,0,0);
+  border-right: 26px solid #5AC4EC;
+  border-left: 0 solid;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: none;
+}
+</style>
+<div class="bubble"></div>
